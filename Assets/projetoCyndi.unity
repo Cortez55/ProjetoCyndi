@@ -128,6 +128,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 646275259}
+  m_RootOrder: 0
 --- !u!1 &646275258
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,9 +165,10 @@ Transform:
   - {fileID: 343627149}
   - {fileID: 1746708198}
   m_Father: {fileID: 0}
+  m_RootOrder: 1
 --- !u!95 &646275260
 Animator:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 9500000, guid: 8520525bf5fe5cf448de355ee48c7e09,
     type: 2}
@@ -176,8 +178,8 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 1bda8dbe97d8d40449f7141958b4b7ff, type: 2}
   m_CullingMode: 0
+  m_UpdateMode: 0
   m_ApplyRootMotion: 0
-  m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
 --- !u!114 &646275261
 MonoBehaviour:
@@ -283,9 +285,8 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 5
   m_SortingLayerID: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: defacd98eb1bb254498e89e853b3a07e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &662016974
@@ -322,6 +323,14 @@ Prefab:
     - target: {fileID: 400000, guid: 060d9d8f4bfbb2044905b7b7dd9f19db, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 060d9d8f4bfbb2044905b7b7dd9f19db, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 060d9d8f4bfbb2044905b7b7dd9f19db, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 060d9d8f4bfbb2044905b7b7dd9f19db, type: 2}
@@ -382,6 +391,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2098940875}
+  m_RootOrder: 0
 --- !u!1 &819098545
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,6 +432,7 @@ Transform:
   m_LocalScale: {x: 25, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1265635245}
+  m_RootOrder: 1
 --- !u!1 &1265635244
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,7 +444,7 @@ GameObject:
   - 212: {fileID: 1265635246}
   m_Layer: 0
   m_Name: chao
-  m_TagString: Untagged
+  m_TagString: elementoDoSonho
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -451,6 +462,7 @@ Transform:
   - {fileID: 2109379478}
   - {fileID: 819098547}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!212 &1265635246
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -470,9 +482,8 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
   m_SortingLayerID: 0
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1cdeff8e3152b614598aa7385fedffca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1746708197
@@ -505,6 +516,7 @@ Transform:
   m_LocalScale: {x: 8.53351593, y: 1.48836553, z: 1}
   m_Children: []
   m_Father: {fileID: 646275259}
+  m_RootOrder: 1
 --- !u!81 &1746708199
 AudioListener:
   m_ObjectHideFlags: 0
@@ -557,8 +569,11 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
   m_HDR: 0
   m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
 --- !u!1001 &2051706583
 Prefab:
   m_ObjectHideFlags: 0
@@ -592,6 +607,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 8520525bf5fe5cf448de355ee48c7e09, type: 2}
       propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 8520525bf5fe5cf448de355ee48c7e09, type: 2}
+      propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -634,6 +653,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 06be4d491127fc740bd0a6ac38492b1a, type: 2}
+      propertyPath: m_TagString
+      value: elementoDoSonho
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 06be4d491127fc740bd0a6ac38492b1a, type: 2}
   m_RootGameObject: {fileID: 1265635244}
@@ -673,6 +696,7 @@ Transform:
   m_Children:
   - {fileID: 802953848}
   m_Father: {fileID: 0}
+  m_RootOrder: 2
 --- !u!114 &2098940877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -777,9 +801,8 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 5
   m_SortingLayerID: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: db9e6db3bffc5314492a876bedb00293, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &2109379477
@@ -809,6 +832,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1265635245}
+  m_RootOrder: 0
 --- !u!212 &2109379479
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -828,8 +852,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: -1
   m_SortingLayerID: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: ddc09706e2a044740961e41834998a68, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
