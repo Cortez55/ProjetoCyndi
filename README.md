@@ -1,4 +1,4 @@
-lunatico
+Cindy
 ========
 
-projeto do jogo lunatico
+projeto do jogo sem nome, envolvendo Cindy
